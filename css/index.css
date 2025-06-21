@@ -20,6 +20,11 @@ header {
   font-size: 30px;
 }
 
+article {
+    margin: 20px;
+    text-align: justify;
+}
+
 footer {
     text-align: center;
     font-size: medium;
