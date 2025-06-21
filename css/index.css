@@ -11,21 +11,56 @@
 body {
   font-family: 'DotGothic16', sans-serif;
 }*/
-/* Header/Logo Title */
+
 header {
-  padding: 60px;
+  padding: 145px;
   text-align: center;
-  background: #1abc9c;
+  
+  background-image: url("../assets/images/minecraft_wallpaper.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex; /* Para centralizar o h1 */
+  justify-content: center; /* Para centralizar o h1 */
+  align-items: center; /* Para centralizar o h1 */
+  position: relative; /* Essencial para posicionar o h1 */
+  overflow: hidden; /* Garante que o h1 não "escape" se movimentando muito */
+  
   color: white;
-  font-size: 30px;
+  font-size: larger;
+}
+
+header h1 {
+  font-size: 3em; /*font-size: 70px; */
+  text-shadow: 2px 2px 20px black;
+  color: white; /* Cor do seu título */
+  position: absolute; /* Permite mover livremente em relação ao header */
+  transition: transform 0.1s ease-out; /* Transição suave para o movimento */
+  will-change: transform; /* Otimização para performance da animação */
+}
+
+li.nav-item {
+  padding-top: 10px;
+}
+
+.nav-item {
+  margin: 30px;
+  font-size: large;
+}
+
+article img {
+  margin: 20px;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  height: 100vh;
 }
 
 article {
-    margin: 20px;
-    text-align: justify;
+  margin: 20px;
+  text-align: justify;
 }
 
 footer {
-    text-align: center;
-    font-size: medium;
+  text-align: center;
+  font-size: medium;
 }
