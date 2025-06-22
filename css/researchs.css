@@ -1,17 +1,3 @@
-/*@import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
-
-@font-face {
-  font-family: 'DotGothic16'; /* Nome que você dará para a fonte no CSS
-  src: url('../fonts/DotGothic16-Regular.ttf') format('truetype'); /* Caminho para o arquivo da fonte 
-  font-weight: normal;  Ou o peso específico da fonte, se houver 
-  font-style: normal;  /* Ou o estilo específico, se houver 
-  font-display: swap;  /* Melhora o carregamento da fonte, evitando texto invisível 
-}
-
-body {
-  font-family: 'DotGothic16', sans-serif;
-}*/
-
 header {
   padding: 145px;
   text-align: center;
