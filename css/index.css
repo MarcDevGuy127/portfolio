@@ -38,24 +38,36 @@ header h1 {
   will-change: transform;
 }
 
-.nav-item {
-  margin: 30px;
-  font-size: large;
-  color: white;
+a.nav-item {
+  padding-top: 5px;
+}
+
+#offcanvasNavbar .nav-link {
+  padding-top: 10px; /*padding-top padding-right padding-bottom padding-left*/
+  padding-bottom: 15px;
+  font-size: medium;   
+  display: block;       /* Importante para que o padding vertical funcione bem */
+  margin: 0;            
+}
+
+
+#offcanvasNavbar a.text-light:hover {
+  color: #007bff !important;
 }
 
 article {
+  display: flex;
+  align-items: center;
+  gap: 20px;
   margin: 20px;
   text-align: justify;
 }
 
 article img {
-  margin: 20px;
-  width: auto;
-  height: 500px;
-  object-fit: cover;
-  border-style: solid;
-  border-color: black;
+  max-width: 300px; 
+  height: auto;
+  border: 2px solid black;
+  border-radius: 30px;
 }
 
 footer {
