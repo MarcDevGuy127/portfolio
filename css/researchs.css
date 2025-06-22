@@ -1,3 +1,17 @@
+/*@import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
+
+@font-face {
+  font-family: 'DotGothic16'; /* Nome que você dará para a fonte no CSS
+  src: url('../fonts/DotGothic16-Regular.ttf') format('truetype'); /* Caminho para o arquivo da fonte 
+  font-weight: normal;  Ou o peso específico da fonte, se houver 
+  font-style: normal;  /* Ou o estilo específico, se houver 
+  font-display: swap;  /* Melhora o carregamento da fonte, evitando texto invisível 
+}
+
+body {
+  font-family: 'DotGothic16', sans-serif;
+}*/
+
 header {
   padding: 145px;
   text-align: center;
@@ -24,10 +38,21 @@ header h1 {
   will-change: transform;
 }
 
-.nav-item {
-  margin: 30px;
-  font-size: large;
-  color: white;
+a.nav-item {
+  padding-top: 5px;
+}
+
+#offcanvasNavbar .nav-link {
+  padding-top: 10px; /*padding-top padding-right padding-bottom padding-left*/
+  padding-bottom: 15px;
+  font-size: medium;   
+  display: block;
+  margin: 0;            
+}
+
+
+#offcanvasNavbar a.text-light:hover {
+  color: #007bff !important;
 }
 
 article {
@@ -36,12 +61,10 @@ article {
 }
 
 article img {
-  margin: 20px;
-  width: auto;
-  height: 500px;
-  object-fit: cover;
-  border-style: solid;
-  border-color: black;
+  max-width: 300px; 
+  height: auto;
+  border: 2px solid lightgray;
+  border-radius: 30px;
 }
 
 footer {
