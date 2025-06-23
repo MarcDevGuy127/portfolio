@@ -17,7 +17,7 @@ tituloBanner.addEventListener('mousemove', (evento) => {
     headerH1.style.transform = `translate(${moverX}px, ${moverY}px)`;
 });
 
-// 3. Quando o mouse sai do cabeçalho...
+//animacao de retorno do titulo apos apontar mouse para fora da area do titulo
 tituloBanner.addEventListener('mouseleave', () => {
     headerH1.style.transform = `translate(0px, 0px)`;
 });

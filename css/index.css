@@ -64,13 +64,13 @@ article {
 }
 
 article img {
-  max-width: 300px; 
+  max-width: 50%; 
   height: auto;
   border: 2px solid lightgray;
-  border-radius: 30px;
+  /*border-radius: 30px;*/
 }
 
 footer {
-  text-align: center;
+  /*text-align: center;*/
   font-size: medium;
 }
