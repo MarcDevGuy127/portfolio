@@ -58,14 +58,19 @@ a.nav-item {
 
 article {
   display: flex;
-  align-items: center;
-  gap: 20px;
-  margin: 20px;
-  text-align: justify;
+  /*align-items: center;
+  gap: 20px; */
+  margin: 30px;
+  /*text-align: justify; */
+}
+
+.text-content {
+  padding: 15px;
+  text-align: justify; /*alinhamento do texto*/
 }
 
 article img {
-  max-width: 50%; 
+  max-width: 20%; 
   height: auto;
   border: 2px solid lightgray;
   /*border-radius: 30px;*/
