@@ -45,6 +45,7 @@ a.nav-item {
 #offcanvasNavbar .nav-link {
   padding-top: 10px; /*padding-top padding-right padding-bottom padding-left*/
   padding-bottom: 15px;
+  padding-left: 50px;
   font-size: medium;   
   display: block;
   margin: 0;            
