@@ -16,7 +16,7 @@ header {
   padding: 145px;
   text-align: center;
   
-  background-image: url("../assets/images/minecraft_wallpaper.jpg");
+  background-image: url("../assets/images/praia_wallpaper.jpg");
   background-size: cover;
   background-position: center;
   display: flex;
@@ -32,7 +32,6 @@ header {
 header h1 {
   font-size: 3em; /*font-size: 70px; */
   text-shadow: 2px 2px 20px black;
-  color: white;
   position: absolute;
   transition: transform 0.1s ease-out;
   will-change: transform;
@@ -51,6 +50,11 @@ a.nav-item {
   margin: 0;            
 }
 
+/*.navbar-toggler-icon {
+  background-color: #343a40;
+  border: none;
+  border-radius: 4px;
+}*/
 
 #offcanvasNavbar a.text-light:hover {
   color: #007bff !important;
