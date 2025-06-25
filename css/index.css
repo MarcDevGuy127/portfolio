@@ -12,6 +12,10 @@ body {
   font-family: 'DotGothic16', sans-serif;
 }*/
 
+body {
+  padding-top: 56px; /* Default Bootstrap navbar height */
+}
+
 header {
   padding: 145px;
   text-align: center;
