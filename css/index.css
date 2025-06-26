@@ -88,3 +88,7 @@ footer {
   /*text-align: center;*/
   font-size: medium;
 }
+
+#pages a.text-muted:hover {
+  color: #007bff !important;
+}
