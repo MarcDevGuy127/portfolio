@@ -51,8 +51,8 @@
 
                 <!--barra de pesquisa-->
                 <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-                <button class="btn btn-success" type="submit">Search</button>
+                    <input id="searchInput" class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+                    <button class="btn btn-success" type="submit">Search</button>
                 </form>
                 
                 <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
@@ -87,7 +87,7 @@
             <div class="row align-items-center justify-content-center">
                 <!-- Imagem esquerda -->
                 <div class="col-12 col-md-3 order-1 order-md-1">
-                    <img src="/assets/images/matricula_faculdade.jpg" class="img-fluid d-block mx-auto" alt="Dia de matrícula na faculdade.">
+                    <img src="/assets/images/me_pizza.jpeg" class="img-fluid d-block mx-auto" alt="Dia de matrícula na faculdade.">
                 </div>
 
                 <!-- Coluna de texto -->
@@ -123,7 +123,7 @@
 
                 <!-- Imagem direita -->
                 <div class="col-12 col-md-3 order-3 order-md-3">
-                    <img src="/assets/images/matricula_faculdade.jpg" class="img-fluid d-block mx-auto" alt="Dia de matrícula na faculdade.">
+                    <img src="/assets/images/motionsphere.jpg" class="img-fluid d-block mx-auto" alt="Dia de matrícula na faculdade.">
                 </div>
             </div>
         </article>
@@ -222,6 +222,17 @@
             </div>
         </footer>
     </div>
+    <!--script>
+        const searchInput = document.getElementById('searchInput');
+        const articles = document.querySelectorAll('#articlesContainer article');
+
+        searchInput.addEventListener('keyup', function() {
+        const filter = searchInput.value.toLowerCase();
+        articles.forEach(article => {
+        const pText = article.querySelector('p').textContent.toLowerCase();
+        article.style.display = pText.includes(filter) ? '' : 'none';                    });
+    });
+    </script-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
     <script src="/js/index.js"></script>
 </body>
