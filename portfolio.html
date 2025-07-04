@@ -6,24 +6,55 @@
     <title>Marcelo Henrique</title>
     <link rel="icon" type="image/x-icon" href="../assets/icons/favicon.ico">
     <link rel="stylesheet" href="/css/portfolio.css">
-
-    <!--link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet"-->
+    <!--link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet"-->
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
 </head>
 <body>
+    
     <header id="tituloBanner">
-        <h1>Portfolio</h1>
+    <h1>Portfolio</h1>
     </header>
+
+
     <section>
-        <nav class="navbar fixed-top bg-transparent">
+        <nav class="navbar bg-transparent fixed-top">
             <div class="container-fluid">
-
-                <button class="navbar-toggler me-2" type="button" data-bs-toggle="offcanvas"  data-bs-theme="dark" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon color-light" ></span>
+                <button class="navbar-toggler shadow-lg me-2" type="button" data-bs-toggle="offcanvas"  data-bs-theme="light" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
                 </button>
+                
+                <a class="navbar-brand me-auto text-light fw-normal" href="index.html" 
+                style="color: white;
+                text-shadow: 
+                    -1px -1px 0 #000,  
+                    1px -1px 0 #000,
+                    -1px 1px 0 #000,
+                    1px 1px 0 #000,
+                    0 0 8px #000;
+                font-weight: bold;">
+                    Marcelo Henrique
+                </a>
+                
+                <!--botao para mudar tema-->
+                <div class="d-flex align-items-center ms-auto">
+                    <button class="btn btn-outline-secondary bg-secondary" id="themeSwitcher">
+                        <span class="theme-icon-light">
+                            <img src="assets/icons/white_moon.ico" style="width: 20px; height: 20px;">
+                        </span>
+                        <span class="theme-icon-dark" style="display: none;">
+                            <img src="assets/icons/white_sun.ico" style="width: 20px; height: 20px;">
+                        </span>
+                    </button>
+                </div>
 
-                <a class="navbar-brand me-auto text-light" href="index.html" style="text-shadow: 2px 2px 15px black;">Marcelo Henrique</a>
+                <!--barra de pesquisa-->
+                <form class="d-flex" role="search">
+                    <input id="searchInput" class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+                    <button class="btn btn-success" type="submit">Search</button>
+                </form>
                 
                 <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                     <div class="offcanvas-header bg-dark">
@@ -44,16 +75,120 @@
             </div>
         </nav>
 
-        <article>
-            <h1>London</h1>
-            <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants. London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
-            <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium. Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+        <!-- Estrutura para adicionar paragrafo-->
+        <article class="container mt-5">
+            <div class="row justify-content-end text-content">
+                <h1>London</h1>
+                <p>London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants. London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants. London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants. London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+                <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium. Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+            </div>
         </article>
     </section>
     
-    <footer>
-        <p><a href="mailto:marceloh.github@gmail.com">marceloh.github@gmail.com</a></p>
-    </footer>
+    <!--footer-->
+    <div class="container">
+        <footer class="py-5 border-top">
+            <div class="row">
+
+                <!--Pages-->
+                <div class="col-3">
+                    <h5>Pages</h5>
+                    <ul class="nav flex-column" id="pages">
+                    <li class="nav-item mb-2 fw-normal"><a href="index.html" class="nav-link p-0 text-muted">Marcelo Henrique Costa da Silva</a></li>
+                    <li class="nav-item mb-2 fw-normal"><a href="portfolio.html" class="nav-link p-0 text-muted">Portfolio</a></li>
+                    <li class="nav-item mb-2 fw-normal"><a href="projects.html" class="nav-link p-0 text-muted">Academical Projects</a></li>
+                    <li class="nav-item mb-2 fw-normal"><a href="researchs.html" class="nav-link p-0 text-muted">Researchs</a></li>
+                    </ul>
+                </div>
+
+                <!--social medias-->
+                <div class="col-3 offset-1">
+                    <h5>Social Medias</h5>
+                    <ul class="nav flex-column">
+                        <!--li class="nav-item mb-2 fw-normal">
+                            <a href="" 
+                            class="link-secondary link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover">
+                            <span>
+
+                            </span> </a>
+                            
+                            <a class="icon-link" href="https://www.linkedin.com/in/marcelo-henrique-costa-da-silva">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                                    <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+                                </svg>
+                                in/marcelo-henrique-costa-da-silva/
+                            </a>
+                        </li-->
+                        
+                        <li class="nav-item mb-2 fw-normal">
+                            <a class="text-body icon-link icon-link-hover text-decoration-none" style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);" href="https://www.linkedin.com/in/marcelo-henrique-costa-da-silva">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                                    <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+                                </svg>
+                                in/marcelo-henrique-costa-da-silva/
+                            </a>
+                        </li>
+
+                        <li class="nav-item mb-2 fw-normal">
+                            <a class="text-body icon-link icon-link-hover text-decoration-none" style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);" href="https://github.com/MarcDevGuy127">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+                                </svg>
+                                @MarcDevGuy127
+                            </a>
+                        </li>
+                    <!--li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">A</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">R</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">A</a></li-->
+                    </ul>
+                </div>
+
+                <!--email-->
+                <div class="col-4 offset-1">
+                    <form>
+                        <h5>Talk with me!</h5>
+                        <p class="fw-light">If you have a proposal or job offer send a email.</p>
+                        <div class="d-flex w-100 gap-2">
+                            <!--label for="newsletter1" class="visually-hidden">Email address</label>
+                            <input id="newsletter1" type="text" class="form-control" placeholder="Email address"-->
+                            
+                            <a href="mailto:marceloh.github@gmail.com?subject=Exciting%20Job%20Opportunity&body=Hi%20Marcelo,%0D%0A%0D%0AI%20have%20an%20exciting%20opportunity%20for%20you!%0D%0A%0D%0ANice%20to%20meet%20you!%20My%20name%20is...%20I'm%20from..."
+                            class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover">
+                            marceloh.github@gmail.com
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"></path>
+                            <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"></path>
+                            </svg>
+                            </a>
+                            <!--a href="mailto:marceloh.github@gmail.com?subject=Exciting%20Job%20Opportunity&body=Hi%20Marcelo,%0D%0A%0D%0AI%20have%20an%20exciting%20opportunity%20for%20you!%0D%0A%0D%0ANice%20to%20meet%20you!%20My%20name%20is...%20I'm%20from..."
+                            class="btn btn-primary bg-transparent">
+                            marceloh.github@gmail.com
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
+                            <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
+                            </svg>
+                            </a-->
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-center py-4 my-4 border-top">
+            <p>© 2025 Provided by Vercel and Bootstrap frameworks. Developed by MarcDevGuy127.</p>
+            </div>
+        </footer>
+    </div>
+    <!--script>
+        const searchInput = document.getElementById('searchInput');
+        const articles = document.querySelectorAll('#articlesContainer article');
+
+        searchInput.addEventListener('keyup', function() {
+        const filter = searchInput.value.toLowerCase();
+        articles.forEach(article => {
+        const pText = article.querySelector('p').textContent.toLowerCase();
+        article.style.display = pText.includes(filter) ? '' : 'none';                    });
+    });
+    </script-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
     <script src="/js/index.js"></script>
 </body>
