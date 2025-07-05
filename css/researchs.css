@@ -20,9 +20,9 @@ header {
   padding: 145px;
   text-align: center;
   
-  background-image: url("../assets/images/praia_wallpaper.jpg");
+  background-image: url("../assets/images/piraquara.jpg");
   background-size: cover;
-  background-position: center;
+  background-position: bottom;
   display: flex;
   justify-content: center;
   align-items: center;
