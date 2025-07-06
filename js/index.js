@@ -61,7 +61,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
 //title transition animation
 const h1 = document.getElementById('frase_titulo');
-const novaFrase = "Marcelo Henrique";
+const proximaFrase = "Marcelo Henrique";
+//const terceiraFrase = "Relax";
 
 // delay
 setTimeout(() => {
@@ -69,7 +70,7 @@ setTimeout(() => {
 
     // texts transition
     setTimeout(() => {
-        h1.textContent = novaFrase;
+        h1.textContent = proximaFrase;
         h1.classList.remove('fade-out');
         h1.classList.add('fade-in');
     }, 1200);
