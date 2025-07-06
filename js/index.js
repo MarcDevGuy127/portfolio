@@ -28,12 +28,12 @@ document.addEventListener('DOMContentLoaded', function () {
     const lightIcon = themeSwitcher.querySelector('.theme-icon-light');
     const darkIcon = themeSwitcher.querySelector('.theme-icon-dark');
 
-    // Check for saved theme preference or use preferred color scheme
+    //check for saved theme preference or use preferred color scheme
     const savedTheme = localStorage.getItem('theme') ||
         (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
     document.documentElement.setAttribute('data-bs-theme', savedTheme);
 
-    // Set initial icon state
+    //set initial icon state
     if (savedTheme === 'dark') {
         lightIcon.style.display = 'none';
         darkIcon.style.display = 'inline';
@@ -43,11 +43,11 @@ document.addEventListener('DOMContentLoaded', function () {
         const currentTheme = document.documentElement.getAttribute('data-bs-theme');
         const newTheme = currentTheme === 'light' ? 'dark' : 'light';
 
-        // Apply new theme
+        //apply new theme
         document.documentElement.setAttribute('data-bs-theme', newTheme);
         localStorage.setItem('theme', newTheme);
 
-        // Toggle icons
+        //toggle icons
         if (newTheme === 'dark') {
             lightIcon.style.display = 'none';
             darkIcon.style.display = 'inline';
@@ -57,3 +57,21 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 });
+
+
+//title transition animation
+const h1 = document.getElementById('frase_titulo');
+const novaFrase = "Marcelo Henrique";
+
+// delay
+setTimeout(() => {
+    h1.classList.add('fade-out');
+
+    // texts transition
+    setTimeout(() => {
+        h1.textContent = novaFrase;
+        h1.classList.remove('fade-out');
+        h1.classList.add('fade-in');
+    }, 1200);
+
+}, 3000);

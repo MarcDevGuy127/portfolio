@@ -16,10 +16,21 @@ body {
   padding-top: 56px; /* Default Bootstrap navbar height *
 }*/
 
+.fade-out {
+  opacity: 0;
+  transform: scale(0.95);
+  /* Leve encolhimento ao sumir */
+}
+
+.fade-in {
+  opacity: 1;
+  transform: scale(1);
+}
+
 header {
   padding: 145px;
   text-align: center;
-  
+
   background-image: url("../assets/images/praia_wallpaper.jpg");
   background-size: cover;
   background-position: center;
@@ -28,17 +39,22 @@ header {
   align-items: center;
   position: relative;
   overflow: hidden;
-  
+
   color: white;
   font-size: larger;
 }
 
 header h1 {
-  font-size: 3em; /*font-size: 70px; */
+  font-size: 3em;
+  /*font-size: 70px; */
   text-shadow: 2px 2px 20px black;
   position: absolute;
-  transition: transform 0.1s ease-out;
+  
   will-change: transform;
+
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 1.2s ease, transform 1.2s ease-out;
 }
 
 a.nav-item {
@@ -46,12 +62,13 @@ a.nav-item {
 }
 
 #offcanvasNavbar .nav-link {
-  padding-top: 10px; /*padding-top padding-right padding-bottom padding-left*/
+  padding-top: 10px;
+  /*padding-top padding-right padding-bottom padding-left*/
   padding-bottom: 15px;
   padding-left: 50px;
-  font-size: medium;   
+  font-size: medium;
   display: block;
-  margin: 0;            
+  margin: 0;
 }
 
 /*.navbar-toggler-icon {
@@ -74,11 +91,12 @@ article {
 
 .text-content {
   padding: 15px;
-  text-align: justify; /*alinhamento do texto*/
+  text-align: justify;
+  /*alinhamento do texto*/
 }
 
 article img {
-  max-width: 20%; 
+  max-width: 20%;
   height: auto;
   border: 2px solid lightgray;
   /*border-radius: 30px;*/
