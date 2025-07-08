@@ -16,116 +16,138 @@
       crossorigin="anonymous"
     />
   </head>
-  <body>
-    <header id="tituloBanner">
-      <h1 id="frase_titulo">Welcome to my website!</h1>
-    </header>
-
-    <section>
-      <nav class="navbar bg-transparent fixed-top">
-        <div class="container-fluid">
-          <button
-            class="navbar-toggler shadow-lg me-2"
-            type="button"
-            data-bs-toggle="offcanvas"
-            data-bs-theme="light"
-            data-bs-target="#offcanvasNavbar"
-            aria-controls="offcanvasNavbar"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-
-          <a
-            class="navbar-brand me-auto text-light fw-normal"
-            href="index.html"
-            style="
-              color: white;
-              text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
-                1px 1px 0 #000, 0 0 8px #000;
-              font-weight: bold;
-            "
-          >
-            Marcelo Henrique
-          </a>
-
-          <!--botao para mudar tema-->
-          <div class="d-flex align-items-center ms-auto">
-            <button
-              class="btn btn-outline-secondary bg-secondary"
-              id="themeSwitcher"
-            >
-              <span class="theme-icon-light">
-                <img
-                  src="assets/icons/white_moon.ico"
-                  style="width: 20px; height: 20px"
-                />
-              </span>
-              <span class="theme-icon-dark" style="display: none">
-                <img
-                  src="assets/icons/white_sun.ico"
-                  style="width: 20px; height: 20px"
-                />
-              </span>
-            </button>
-          </div>
-
-          <!--barra de pesquisa-->
-          <form class="d-flex" role="search">
-            <input
-              id="searchInput"
-              class="form-control me-2"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
-            <button class="btn btn-success" type="submit">Search</button>
-          </form>
-
-          <div
-            class="offcanvas offcanvas-start"
-            tabindex="-1"
-            id="offcanvasNavbar"
-            aria-labelledby="offcanvasNavbarLabel"
-          >
-            <div class="offcanvas-header bg-dark">
-              <!--h5 class="offcanvas-title text-light" id="offcanvasNavbarLabel">MarcDevGuy127</h5-->
-              <button
-                type="button"
-                class="btn-close btn-close-white"
-                data-bs-dismiss="offcanvas"
-                aria-label="Close"
-              ></button>
-            </div>
-            <div class="offcanvas-body bg-dark flex-column">
-              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                <li class="nav-item">
-                  <a
-                    class="nav-link text-light fw-light"
-                    aria-current="page"
-                    href="index.html"
-                    >Marcelo Henrique Costa da Silva</a
-                  >
-                  <a class="nav-link text-light fw-light" href="portfolio.html"
-                    >Portfolio</a
-                  >
-                  <a class="nav-link text-light fw-light" href="projects.html"
-                    >Academic Projects</a
-                  >
-                  <a class="nav-link text-light fw-light" href="researchs.html"
-                    >Researchs</a
-                  >
-                  <a class="nav-link text-light fw-light" href="gallery.html"
-                    >Gallery</a
-                  >
-                </li>
-              </ul>
-            </div>
+  <body class="py-0 container-fluid">
+    <!--ok-->
+    <header id="tituloBanner" class="py-6 d-flex align-items-center">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 text-center position-relative justify-content-end text-content">
+            <h1 id="frase_titulo" class="mb-0 px-1 bg-image" style="top: -20px; left: 20px;">
+              Welcome to my website!
+            </h1>
           </div>
         </div>
-      </nav>
+      </div>
+    </header>
 
-      <!-- phrase struct
+
+
+    <section class="py-lg-5 py-3"><!--fix-->
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <nav class="navbar bg-transparent fixed-top">
+              <div class="container-fluid">
+                <button
+                  class="navbar-toggler shadow-lg me-2"
+                  type="button"
+                  data-bs-toggle="offcanvas"
+                  data-bs-theme="light"
+                  data-bs-target="#offcanvasNavbar"
+                  aria-controls="offcanvasNavbar"
+                  aria-label="Toggle navigation"
+                >
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <a
+                  class="navbar-brand me-auto text-light fw-normal"
+                  href="index.html"
+                  style="
+                    color: white;
+                    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000,
+                      -1px 1px 0 #000, 1px 1px 0 #000, 0 0 8px #000;
+                    font-weight: bold;
+                  "
+                >
+                  Marcelo Henrique
+                </a>
+
+                <!--botao para mudar tema-->
+                <div class="d-flex align-items-center ms-auto">
+                  <button
+                    class="btn btn-outline-secondary bg-secondary"
+                    id="themeSwitcher"
+                  >
+                    <span class="theme-icon-light">
+                      <img
+                        src="assets/icons/white_moon.ico"
+                        style="width: 20px; height: 20px"
+                      />
+                    </span>
+                    <span class="theme-icon-dark" style="display: none">
+                      <img
+                        src="assets/icons/white_sun.ico"
+                        style="width: 20px; height: 20px"
+                      />
+                    </span>
+                  </button>
+                </div>
+
+                <!--barra de pesquisa-->
+                <form class="d-flex" role="search">
+                  <input
+                    id="searchInput"
+                    class="form-control me-2"
+                    type="search"
+                    placeholder="Search"
+                    aria-label="Search"
+                  />
+                  <button class="btn btn-success" type="submit">Search</button>
+                </form>
+
+                <div
+                  class="offcanvas offcanvas-start"
+                  tabindex="-1"
+                  id="offcanvasNavbar"
+                  aria-labelledby="offcanvasNavbarLabel"
+                >
+                  <div class="offcanvas-header bg-dark">
+                    <!--h5 class="offcanvas-title text-light" id="offcanvasNavbarLabel">MarcDevGuy127</h5-->
+                    <button
+                      type="button"
+                      class="btn-close btn-close-white"
+                      data-bs-dismiss="offcanvas"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="offcanvas-body bg-dark flex-column">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                      <li class="nav-item">
+                        <a
+                          class="nav-link text-light fw-light"
+                          aria-current="page"
+                          href="index.html"
+                          >Marcelo Henrique Costa da Silva</a
+                        >
+                        <a
+                          class="nav-link text-light fw-light"
+                          href="portfolio.html"
+                          >Portfolio</a
+                        >
+                        <a
+                          class="nav-link text-light fw-light"
+                          href="projects.html"
+                          >Academic Projects</a
+                        >
+                        <a
+                          class="nav-link text-light fw-light"
+                          href="researchs.html"
+                          >Researchs</a
+                        >
+                        <a
+                          class="nav-link text-light fw-light"
+                          href="gallery.html"
+                          >Gallery</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </nav>
+
+            <!-- phrase struct
         <article class="container mt-5">
             <div class="row justify-content-end text-content">
                 <h1>London</h1>
@@ -134,81 +156,89 @@
             </div>
         </article-->
 
-      <article class="container mt-5">
-        <div class="row align-items-center justify-content-center">
-          <!-- left image -->
-          <div class="col-12 col-md-3 order-1 order-md-1">
-            <img
-              src="/assets/images/me_pizza.jpeg"
-              class="img-fluid d-block mx-auto"
-              alt="Pizza day!"
-            />
-          </div>
+            <article class="container mt-5">
+              <div class="row align-items-center justify-content-center">
+                <!-- left image -->
+                <div class="col-12 col-md-3 order-1 order-md-1">
+                  <img
+                    src="/assets/images/me_pizza.jpeg"
+                    class="img-fluid d-block mx-auto"
+                    alt="Pizza day!"
+                  />
+                </div>
 
-          <!--text -->
-          <div class="col-12 col-md-6 order-2 order-md-3 text-content small">
-            <p>
-              As a Software Engineering student at the
-              <a href="https://www.unibrasil.com.br/">
-                Autonomous University Center of Brazil</a
-              >, currently in the early stages of both my third academic
-              semester and professional life, I aim to work in the development
-              of well-architected and efficient software. I already have
-              academic experience in web project development, both using the
-              traditional trinity (HTML/CSS/JS) and implementing APIs and
-              frameworks such as Bootstrap, CSS Thailand, and Vercel. In
-              addition to creating such front-end projects, I place emphasis on
-              back-end applications, using programming languages such as Java
-              and C/C++, with basic integration of MySQL databases. Alongside my
-              experience in code versioning with Git, I have knowledge of
-              applications based on the MVC pattern. Additionally, I have prior
-              experience with documentation, test scripts, and backlog
-              management using Azure DevOps and GitHub.
-            </p>
+                <!--text -->
+                <div
+                  class="col-12 col-md-6 order-2 order-md-3 text-content small"
+                >
+                  <p>
+                    As a Software Engineering student at the
+                    <a href="https://www.unibrasil.com.br/">
+                      Autonomous University Center of Brazil</a
+                    >, currently in the early stages of both my third academic
+                    semester and professional life, I aim to work in the
+                    development of well-architected and efficient software. I
+                    already have academic experience in web project development,
+                    both using the traditional trinity (HTML/CSS/JS) and
+                    implementing APIs and frameworks such as Bootstrap, CSS
+                    Thailand, and Vercel. In addition to creating such front-end
+                    projects, I place emphasis on back-end applications, using
+                    programming languages such as Java and C/C++, with basic
+                    integration of MySQL databases. Alongside my experience in
+                    code versioning with Git, I have knowledge of applications
+                    based on the MVC pattern. Additionally, I have prior
+                    experience with documentation, test scripts, and backlog
+                    management using Azure DevOps and GitHub.
+                  </p>
 
-            <p>
-              My educational background includes a technical course in Systems
-              Analysis and Development, provided by the
-              <a href="https://www.senaipr.org.br/"
-                >National Industrial Learning Service</a
-              >, complemented by subsequent training in IT Assistance obtained
-              from the
-              <a href="https://fws.org.br/">Weiss Scarpa Foundation</a>. Among
-              my professional experiences, I recently completed one semester as
-              an IT Intern at
-              <a href="https://employer.com.br/curitiba/">Employer RH</a>, where
-              I demonstrated efficiency, dedication, and agility in
-              problem-solving. Within the corporate environment, I showcased
-              productivity, proactivity, interpersonal skills, punctuality, and
-              responsibility. Previously, I operated 4D entertainment machines,
-              focusing not only on configuration, maintenance, and the safety of
-              users but also on customer service and reception. Through
-              <a href="https://www.motion.ms/">MotionSphere</a>, I delivered
-              positive results in demand management, decision-making, and,
-              consequently, in the company's brand reputation.
-            </p>
-          </div>
+                  <p>
+                    My educational background includes a technical course in
+                    Systems Analysis and Development, provided by the
+                    <a href="https://www.senaipr.org.br/"
+                      >National Industrial Learning Service</a
+                    >, complemented by subsequent training in IT Assistance
+                    obtained from the
+                    <a href="https://fws.org.br/">Weiss Scarpa Foundation</a>.
+                    Among my professional experiences, I recently completed one
+                    semester as an IT Intern at
+                    <a href="https://employer.com.br/curitiba/">Employer RH</a>,
+                    where I demonstrated efficiency, dedication, and agility in
+                    problem-solving. Within the corporate environment, I
+                    showcased productivity, proactivity, interpersonal skills,
+                    punctuality, and responsibility. Previously, I operated 4D
+                    entertainment machines, focusing not only on configuration,
+                    maintenance, and the safety of users but also on customer
+                    service and reception. Through
+                    <a href="https://www.motion.ms/">MotionSphere</a>, I
+                    delivered positive results in demand management,
+                    decision-making, and, consequently, in the company's brand
+                    reputation.
+                  </p>
+                </div>
 
-          <!--right image-->
-          <div class="col-12 col-md-3 order-3 order-md-3">
-            <img
-              src="/assets/images/motionsphere.jpg"
-              class="img-fluid d-block mx-auto"
-              alt="Working at the MotionSphere."
-            />
+                <!--right image-->
+                <div class="col-12 col-md-3 order-3 order-md-3">
+                  <img
+                    src="/assets/images/motionsphere.jpg"
+                    class="img-fluid d-block mx-auto"
+                    alt="Working at the MotionSphere."
+                  />
+                </div>
+              </div>
+            </article>
           </div>
         </div>
-      </article>
+      </div>
     </section>
 
-    <!--footer-->
+    <!--footer ok-->
     <div class="container">
       <footer class="py-5 border-top">
         <div class="row">
           <!--pages-->
-          <div class="col-3">
+          <div class="col-md-4 mb-3 mb-md-0">
             <h5>Pages</h5>
-            <ul class="nav flex-column" id="pages">
+            <ul class="list-unstyled" id="pages">
               <li class="nav-item mb-2 fw-normal">
                 <a href="index.html" class="nav-link p-0 text-muted"
                   >Marcelo Henrique Costa da Silva</a
@@ -237,10 +267,10 @@
             </ul>
           </div>
 
-          <!--social medias-->
-          <div class="col-3 offset-1">
-            <h5>Social Medias</h5>
-            <ul class="nav flex-column">
+          <!--social-->
+          <div class="col-md-4">
+            <h5>Social</h5>
+            <ul class="list-unstyled">
               <li class="nav-item mb-2 fw-normal">
                 <a
                   class="text-body icon-link icon-link-hover text-decoration-none"
@@ -288,7 +318,7 @@
           </div>
 
           <!--email-->
-          <div class="col-4 offset-1">
+          <div class="col-md-4 mb-3 mb-md-0">
             <form>
               <h5>Talk with me!</h5>
               <p class="fw-light">
