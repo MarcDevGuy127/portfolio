@@ -28,12 +28,12 @@ document.addEventListener('DOMContentLoaded', function () {
     const lightIcon = themeSwitcher.querySelector('.theme-icon-light');
     const darkIcon = themeSwitcher.querySelector('.theme-icon-dark');
 
-    //check for saved theme preference or use preferred color scheme
+    //verifica o tema selecionado ou usa o tema selecionado
     const savedTheme = localStorage.getItem('theme') ||
         (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
     document.documentElement.setAttribute('data-bs-theme', savedTheme);
 
-    //set initial icon state
+    //configura o icone inicial
     if (savedTheme === 'dark') {
         lightIcon.style.display = 'none';
         darkIcon.style.display = 'inline';
@@ -43,11 +43,11 @@ document.addEventListener('DOMContentLoaded', function () {
         const currentTheme = document.documentElement.getAttribute('data-bs-theme');
         const newTheme = currentTheme === 'light' ? 'dark' : 'light';
 
-        //apply new theme
+        //aplicar novo tema
         document.documentElement.setAttribute('data-bs-theme', newTheme);
         localStorage.setItem('theme', newTheme);
 
-        //toggle icons
+        //icones do botao
         if (newTheme === 'dark') {
             lightIcon.style.display = 'none';
             darkIcon.style.display = 'inline';
