@@ -16,7 +16,7 @@ How this works?
 
 Inspirations?
 
-> **Response:** _This project is based on my professor [Thiago Nascimento](https://www.github.com/tnas) [website](https://sites.google.com/site/nascimenthiago/home?authuser=0) and C418 [album's page](https://c418.org/albums/minecraft-volume-alpha/)._
+> **Response:** _This project is based on my professor [Thiago Nascimento website](https://sites.google.com/site/nascimenthiago/home?authuser=0) and [C418 album's page](https://c418.org/albums/minecraft-volume-alpha/)._
 
 
 ## Autor
