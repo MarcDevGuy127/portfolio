@@ -11,7 +11,7 @@ This is my responsive portfolio website built with **Bootstrap** and deployed on
 - Modern UI with smooth animations
 - Deeployment with Vercel
 
-## Technologies Used
+#### Technologies Used
 
 | Technology | Purpose |
 |------------|---------|
