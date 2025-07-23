@@ -24,15 +24,15 @@ This is my responsive portfolio website built with **Bootstrap** and deployed on
 
 ## Learnings
 
-What I learned in this project?
+### What I learned in this project?
 
 > **Response:** _Belong this project I learned how to manage web elements with [Bootstrap's framework](https://getbootstrap.com/). That website had introduced me for JavaScript animations, HTML semantic and responsive concepts._
 
-How this works?
+### How this works?
 
 > **Response:** _This website is provided by [Vercel's framework](https://vercel.com/), most used for deploying website, it offers statistics unlike visit's counting for analysis._
 
-Inspirations?
+### Inspirations?
 
 > **Response:** _This project is based on my professor [Thiago Nascimento website](https://sites.google.com/site/nascimenthiago/home?authuser=0) and [C418 album's page](https://c418.org/albums/minecraft-volume-alpha/)._
 
