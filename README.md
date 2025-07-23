@@ -4,13 +4,6 @@
 
 This is my responsive portfolio website built with **Bootstrap** and deployed on **Vercel**, following **semantic HTML** best practices.
 
-## Features
-
-- Responsiveness using Bootstrap
-- Semantic HTML structure
-- Modern UI with smooth animations
-- Deeployment with Vercel
-
 #### Technologies Used
 
 | Technology | Purpose |
@@ -21,6 +14,12 @@ This is my responsive portfolio website built with **Bootstrap** and deployed on
 | ![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white) | Framework |
 | ![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white) | Deployment |
 
+## Features
+
+- Responsiveness using Bootstrap
+- Semantic HTML structure
+- Modern UI with smooth animations
+- Deeployment with Vercel
 
 ## Learnings
 
@@ -39,4 +38,4 @@ This is my responsive portfolio website built with **Bootstrap** and deployed on
 
 ## Developer
 
-This project was developed by [@MarcDevGuy127](https://www.github.com/MarcDevGuy127).
+This project was developed by [MarcDevGuy127](https://www.github.com/MarcDevGuy127).
